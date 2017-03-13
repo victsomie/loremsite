@@ -1,0 +1,652 @@
+@import "https://fonts.googleapis.com/cssfamily=Teko:300|Titillium+Web:300";
+
+/****************************GENERAL************************************/
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    background: #fff;
+    font-family: 'Titillium Web','Roboto', sans-serif;
+    font-size: 16px;
+/*    font-weight: 200;*/
+    padding-top: 80px;
+}
+
+
+
+/*===== MY MODIFIED CODE ============*/
+
+.myhero{
+    background-image: url(/heroguitarlady.jpg);
+    background-attachment: fixed;
+    background-size: 110% 110%;
+    min-height: 100%;
+    font-size: 1.5em;
+}
+
+.myhero .hero_text{
+    padding: 1.5em;
+}
+
+
+/*========== HEXAGON SHAPES =======================*/
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  margin: 86.60px 0;
+  background-image: url(/heroguitarlady.jpg);
+  background-size: auto 346.4102px;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.85);
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 43.93px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.85);
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 300.0000px;
+  height: 173.20508075688775px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -106.0660px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -106.0660px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 300.0000px;
+  height: 173.2051px;
+  z-index: 2;
+  background: inherit;
+}
+
+
+/*========== END OFHEXAGON SHAPES =======================*/
+
+
+/* ========= HISTORY SECTION ================= */
+#history img{
+    min-height: 25em;
+}
+
+
+/* ========== CORE VALUES ========= */
+#core-values .columns, #core-values .column{
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    
+}
+
+
+/*MY CLASS FOR PADDING SECTIONS*/
+.common-padding, .common_padding{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.common_padding_sides, .common-padding-sides{
+    padding: 0 2em;
+}
+
+
+/* ============ CONTACT FORM =============== */
+
+form{
+    padding:2em;
+}
+.button.hollow{
+    background: #D4C66A;
+    color: #fff;
+    width: 25%;
+}
+
+
+.social_block row i {
+	float: left;
+	font-size: 3.5rem;
+	color: white;
+	min-width: 7.5rem;
+	text-align: right;
+}
+
+
+/* ========= SOCIAL BLOCK ================ */
+.social_block{
+    height: 19.5rem;
+    display: block;
+    text-align: center;
+    padding: 2em;
+}
+
+.social_block:nth-child(1) {
+	background: ;
+}
+
+.social_block:nth-child(2) {
+	background: ;
+}.social_block:nth-child(3) {
+	background: ;
+}.social_block:nth-child(4) {
+	background: ;
+}
+.social_block:hover {
+	background: #fff;
+	transition: 1s;
+/*
+    	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+*/
+}
+
+
+/*=========== COLOR-GRAPHY =================*/
+/* As hex codes */
+
+.color-primary-0 { color: #AA9A39 }	/* Main Primary color */
+.color-primary-1 { color: #FFF3AA }
+.color-primary-2 { color: #D4C66A }
+.color-primary-3 { color: #807115 }
+.color-primary-4 { color: #554900 }
+
+/* As hex codes */
+
+.color-bgprimary-0 { background-color: #AA9A39 }	/* Main Primary color */
+.color-bgprimary-1 { background-color: #FFF3AA }
+.color-bgprimary-2 { background-color: #D4C66A }
+.color-bgprimary-3 { background-color: #807115 }
+.color-bgprimary-4 { background-color: #554900 }
+
+
+
+
+/*==========Typography size and fonts=============*/
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  line-height: 1.5;
+    font-family: 'Titillium Web';
+}
+h1{
+    font-size: 3.998em;
+}
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+
+hr{
+    width: 100%;
+    text-align: left;
+    left: 0;
+}
+
+
+
+/* =====  Continued=========== */
+.nav-center,
+.center{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+a{
+    color: #191919;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+
+
+
+/****************************NAV BAR************************************/
+  
+.nav{
+    background: #ffffff;
+    min-height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+.nav .left{
+    float: left;
+    margin-left: 0;
+}
+.nav .left li{
+/*    font-size: 14px;*/
+    float: left;
+}
+.nav .left li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+    padding: 1.5em;
+}
+.nav .left li a:hover{
+    background: #AA9A39;
+    color: #FFF3AA;
+}
+
+.nav .right{
+    float: right;
+    margin-right: 0;
+}
+.nav .right li{
+/*    font-size: 14px;*/
+    float: left;
+}
+.nav .right li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+    padding: 1.5em;
+}
+.nav .right li a:hover{
+    background: #f2f2f2;
+}
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-mobile style{
+    display: block;
+}
+
+/*********NAV BAR END**********/
+
+
+
+
+/****************************MEDIA QUERIES************************************/
+@media only screen and (max-width: 640px){
+    .nav{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        z-index: 10000;
+    }
+    .nav-center{
+        width: 100%;
+    }
+    .toggle-nav{
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after{
+        content: ' Menu';
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .style-mobile{
+        background: #ffffff;
+        top : 51px;
+        position : absolute;
+        width : 100%;
+    }
+
+    .style-mobile li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav .right{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+
+    .nav .left{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+
+@media only screen and (min-width: 641px){
+    .nav-mobile {
+        display:block !important;
+        
+    }
+    
+}
+/*********MEDIA QUERY END**********/
+@media only screen and (max-width: 450px){
+    
+    h1{
+        font-size: 3.998em;
+    }
+    h2 {font-size: 1.25em;}
+
+    h3 {font-size: 1.999em;}
+
+    h4 {font-size: 1.414em;}
+    
+h1 {
+  font-size: 1.9rem; }
+
+h2 {
+  font-size: 1.25rem; }
+
+h3 {
+  font-size: 1.1875rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
+
+
+}
+
+
+
+/*======== CUSTOM SECTION ============*/
+
+.snip1500 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+    height: 300px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+.snip1500 *,
+.snip1500 *:before,
+.snip1500 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+
+.snip1500 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+    height: 300px;
+}
+
+.snip1500 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px 10px 10px;
+  opacity: 0;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.snip1500 figcaption:before,
+.snip1500 figcaption:after {
+  height: 2px;
+  width: 400px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+
+.snip1500 figcaption:before {
+  top: 0;
+  left: 10px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.snip1500 figcaption:after {
+  bottom: 0;
+  right: 10px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.snip1500 figcaption div:before,
+.snip1500 figcaption div:after {
+  width: 2px;
+  height: 500px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+
+.snip1500 figcaption div:before {
+  top: 10px;
+  right: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.snip1500 figcaption div:after {
+  bottom: 10px;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.snip1500 h2,
+.snip1500 h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.snip1500 h2 {
+  font-weight: 400;
+}
+
+.snip1500 h4 {
+  display: block;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+}
+
+.snip1500 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.snip1500:hover img,
+.snip1500.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.1;
+}
+
+.snip1500:hover figcaption,
+.snip1500.hover figcaption {
+  opacity: 1;
+}
+
+.snip1500:hover figcaption:before,
+.snip1500.hover figcaption:before,
+.snip1500:hover figcaption:after,
+.snip1500.hover figcaption:after,
+.snip1500:hover figcaption div:before,
+.snip1500.hover figcaption div:before,
+.snip1500:hover figcaption div:after,
+.snip1500.hover figcaption div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.snip1500:hover figcaption:before,
+.snip1500.hover figcaption:before,
+.snip1500:hover figcaption:after,
+.snip1500.hover figcaption:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+
+/* =============== END SNIP IMAGE======================*/
+
+/* =========== SVG SAMPLE =================== */
+	.clip-svg {
+		width: 0;
+		height: 0;
+	}
+	
+	.clip-block {
+/*		max-width: 600px;*/
+		max-width: 100%;
+/*		margin: 0 auto;*/
+		padding: 10px;
+		text-align: center;
+	}
+
+	.clip-section {
+		background: #fff; /* fallback for IE 8 */
+		background: rgba(0, 255, 255, 0.4);
+		text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+		padding: 70px 50px;
+	    -webkit-clip-path: polygon(50% 0%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 50% 100%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 0%, 50% 0%, 100% 25%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		clip-path: url("#hexagon-clip-animate");
+		-webkit-transition: all 0.2s linear;
+		transition: all 0.2s linear;
+
+	}
+	.clip-section:hover {
+		-webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+	    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8), 2px 2px 1px rgba(0, 0, 0, 0.2);			
+		-webkit-transition: all 0.2s linear;
+		transition: all 0.2s linear;
+		/*clip-path: url("#octagon-clip-animate");*/
+	}
+
+	.clip-section, .clip-section a {
+		color: rgba(255, 255, 255, 0.05);	
+	}
+
+	.title {
+/*		margin-bottom: 20px;*/
+	}
+
+	.sub-title {
+		font-size: 150%;
+		letter-spacing: 3px;
+	}
+
+	.title, .sub-title {
+		pointer-events: none; /* to allow the mouseover/mouseout events to pass through */
+	}
+
+
+@media screen and (min-width: 600px) {
+		.clip-section {
+			padding: 160px 120px;
+/*			padding: 60px 20px;*/
+		}
+
+		.title {
+/*			font-size: 240%;*/
+		}
+
+		.sub-title {
+/*			font-size: 150%;*/
+			line-height: 1;
+		}
+	}
+
+	@media screen and (min-width: 980px) {
+		.clip-block {
+			padding: 0;
+			position: absolute;
+/*			position: static;*/
+    
+                top: 50%;
+                left: 50%;
+    
+			-ms-transform: translateY(-50%) translateX(-50%);
+			-webkit-transform: translateY(-50%) translateX(-50%);
+			transform: translateY(-50%) translateX(50%);
+		}
+	}
+
+/* ========= END OF SVG CLIP PATH SECTION ===========================*/
+
+
+
+/*
+==============END================
+*/
