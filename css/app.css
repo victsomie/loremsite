@@ -21,7 +21,7 @@ body{
 /*===== MY MODIFIED CODE ============*/
 
 .myhero{
-    background-image: url(/heroguitarlady.jpg);
+    background-image: url(../heroguitarlady.jpg);
     background-attachment: fixed;
     background-size: 110% 110%;
     min-height: 100%;
@@ -116,8 +116,10 @@ body{
 
 /* ========== CORE VALUES ========= */
 #core-values .columns, #core-values .column{
+/*
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+*/
     
 }
 
@@ -156,10 +158,14 @@ form{
 
 /* ========= SOCIAL BLOCK ================ */
 .social_block{
-    height: 19.5rem;
+/*    height: 17.5rem;*/
     display: block;
     text-align: center;
-    padding: 2em;
+}
+
+.social_block_content{
+    padding-top: 4.2em;
+    padding-bottom: 4.2em;
 }
 
 .social_block:nth-child(1) {
@@ -567,9 +573,10 @@ h4 {
 	
 	.clip-block {
 /*		max-width: 600px;*/
-		max-width: 100%;
+		max-width: 350px;
+/*		max-width: 100%;*/
 /*		margin: 0 auto;*/
-		padding: 10px;
+/*		padding: 10px;*/
 		text-align: center;
 	}
 
@@ -577,7 +584,8 @@ h4 {
 		background: #fff; /* fallback for IE 8 */
 		background: rgba(0, 255, 255, 0.4);
 		text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
-		padding: 70px 50px;
+/*		padding: 70px 50px;*/
+		padding: 35px 25px;
 	    -webkit-clip-path: polygon(50% 0%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 50% 100%, 0% 75%, 0% 25%);
 		clip-path: polygon(50% 0%, 50% 0%, 100% 25%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 		clip-path: url("#hexagon-clip-animate");
@@ -614,8 +622,8 @@ h4 {
 
 @media screen and (min-width: 600px) {
 		.clip-section {
-			padding: 160px 120px;
-/*			padding: 60px 20px;*/
+/*			padding: 160px 120px;*/
+			padding: 60px 20px;
 		}
 
 		.title {
