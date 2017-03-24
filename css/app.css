@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/cssfamily=Teko:300|Titillium+Web:300";
+@import "https://fonts.googleapis.com/cssfamily=Teko:300|Titillium+Web:200, 300,400,700";
 
 /****************************GENERAL************************************/
 
@@ -7,13 +7,44 @@
     margin: 0;
     padding: 0;
     outline: 0;
+     font-family: 'Titillium Web','Roboto', sans-serif;
 }
+
+
 body{
     background: #fff;
     font-family: 'Titillium Web','Roboto', sans-serif;
     font-size: 16px;
-/*    font-weight: 200;*/
+    font-weight: 200;
     padding-top: 80px;
+}
+
+
+
+
+/*==========Typography size and fonts=============*/
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  line-height: 1.5;
+    font-family: 'Titillium Web';
+}
+h1{
+    font-size: 3.998em;
+}
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+
+
+
+hr{
+    width: 100%;
+    text-align: left;
+    left: 0;
 }
 
 
@@ -135,6 +166,31 @@ body{
 }
 
 
+
+/*============ CAROUSEL SECTION  ===========================*/
+.testimonials .owl-carousel{   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAIElEQVQYV2P89PHlfwY0wAgT5OMXh7PhDGTF+AWRtQMArqka/Qe2F0MAAAAASUVORK5CYII=
+    ) repeat;
+}
+
+            
+.owl-carousel hr{
+    width: 20%;
+}
+            
+.owl-carousel h1{
+    color: #AA9A39;
+    color: #807115;
+}
+
+.owl-carousel p{
+    color: #807115;
+}
+
+
+
+
+
+
 /* ============ CONTACT FORM =============== */
 
 form{
@@ -217,29 +273,6 @@ form{
 
 
 
-
-/*==========Typography size and fonts=============*/
-
-h1, h2, h3, h4 {
-  font-weight: inherit;
-  line-height: 1.5;
-    font-family: 'Titillium Web';
-}
-h1{
-    font-size: 3.998em;
-}
-h2 {font-size: 2.827em;}
-
-h3 {font-size: 1.999em;}
-
-h4 {font-size: 1.414em;}
-
-
-hr{
-    width: 100%;
-    text-align: left;
-    left: 0;
-}
 
 
 

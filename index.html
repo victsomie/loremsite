@@ -1,5 +1,6 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<!--<html class="no-js" lang="en" dir="ltr">-->
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
@@ -13,8 +14,18 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/jquery.funnyText.css">
     <link rel="stylesheet" href="css/app.css">
+
     
-<!--    FOUNDATION HAS BEEN CHANGED COLUMNS COLUMNS PADDING FOR THIS PROJECTS-->
+    <!-- ===== FOUNDATION HAS BEEN CHANGED COLUMNS COLUMNS PADDING FOR THIS PROJECTS-->
+    
+    
+    <!-- ========= Animating fades css   ============ -->
+     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
+    
+        <!--======== Owl ============== -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    
 
     
 </head>
@@ -48,7 +59,7 @@
             <div class="hero_text column large-7 small-12"> 
                         <h1 class="text1 color-primary-1">We are Lorem</h1>
                 <hr>
-                        <p>The home of Dummy design...</p>
+                        <p data-aos="fade-zoom-in" >The home of Dummy design...</p>
             </div>
             <div class="column large-5 small-12">
                 <div class="clip-block">
@@ -71,34 +82,15 @@
     </div>
     
     <div class="row">
-        <figure class="snip1500">
-            <img src="heroguitarlady.jpg" alt="sq-sample14" />
-            <figcaption>
-                <div>
-                  <h2>Pelican</h2>
-                  <h4>Steve</h4>
-                </div>
-            </figcaption>
-            <a href="#"></a>
-        </figure>
+      
     </div>
     
     <!--====== About us ======================= -->
-    <div class="row expanded" style="margin-top: -30px;">    
-        <div class="hexagon column small-12 large-4">
-            <div class="hexTop"></div>
-            <div class="hexBottom">This</div>
-        </div>        
-        <div class="hexagon column  small-12 large-4">
-            <div class="hexTop"></div>
-            <div class="hexBottom"></div>
-        </div>        
-        <div class="hexagon column small-12 large-4">
-            <div class="hexTop"></div>
-            <div class="hexBottom"></div>
-        </div>
-        
-        
+    <div class="row text-center" style="margin-top: 30px;">   
+        <h1 class="color-primary-2">About us</h1>
+        <hr style="width:10%; height:3px; background: #eff;">
+        <p class="color-primary-2">Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei.</p>
+
         
     </div>
     
@@ -122,7 +114,7 @@
 
     
     <!-- ============ OUR APPROACH : CORE VALUES=====================   -->
-    <div class="row expanded color-bgprimary-2 color-primary-1 common_padding"  id="core-values">
+    <div class="row expandedx color-bgprimary-2 color-primary-1 common_padding"  id="core-values">
         <div class="small-up-1 medium-up-2 large-up-3 text-center" >
             <h1 style="color:#fff">Our core values</h1>
             <hr style="width:20%; height:3px; background: #eff;">
@@ -169,10 +161,10 @@
     
     
    <div class="row expanded color-primary-3" id="history">
-       <div class="column large-5">
+       <div class="column large-5"  data-aos="fade-in" data-aos-anchor-placement="top-center">
            <img src="heroguitarlady.jpg"/>
        </div>
-       <div class="column large-7">
+       <div class="column large-7" data-aos="fade-up" data-aos-anchor-placement="top-center">
            <div class="common-padding common_padding_sides">
                <h1>Our history</h1>
                <hr>
@@ -187,6 +179,78 @@
     
     
     <!--====== Testimonials ======================= -->
+    <div class="row expanded text-center testimonials">
+
+        <div class="column large-3">
+            <h2 class="common_padding">Testmonials</h2>
+        </div>
+        <div class="column large-9">
+            <div class="row owl-carousel owl-theme common_padding">
+                <div class="column">
+                    <h1>Creative Suites</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, ne quo etiam prompta.</p>
+                </div>               
+                <div class="column">
+                  <h1>Microsoft Azure</h1>
+                    <hr>
+                    <p>Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat.</p>
+                </div>               
+                <div class="column">
+                  <h1>CISCO Systems</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, ne quo etiam prompta.</p>
+                </div>             
+                <div class="column">
+                  <h1>Google Home</h1>
+                    <hr>
+                    <p>Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat.</p>
+                </div>             
+                <div class="column">
+                    <h1>United Nations</h1>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, ne quo etiam prompta. <br>
+                        Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat.
+                    </p>
+                </div>               
+
+            </div>
+             
+        </div>
+    </div>
+    
+<!--   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&777777 -->
+    <!--
+    <div class="row">
+    <div class="owl-carousel owl-theme">
+                 
+                 <div class="owl-item cloned" style="width: 235px; margin-right: 10px;"><div class="item">
+                      <h4>1</h4>
+                    </div></div>
+                 <div class="owl-item cloned" style="width: 235px; margin-right: 10px;"><div class="item">
+                      <h4>2</h4>
+                    </div></div>
+                 <div class="owl-item cloned" style="width: 235px; margin-right: 10px;"><div class="item">
+                      <h4>3</h4>
+                    </div></div>
+                 <div class="owl-item cloned" style="width: 235px; margin-right: 10px;"><div class="item">
+                      <h4>4</h4>
+                    </div></div>
+                 <div class="owl-item cloned" style="width: 235px; margin-right: 10px;"><div class="item">
+                      <h4>5</h4>
+                    </div></div>
+                 <div class="owl-item cloned" style="width: 235px; margin-right: 10px;"><div class="item">
+                      <h4>6</h4>
+                    </div>
+                 </div>
+            
+        
+    
+        </div>
+    </div>
+    -->
+<!--   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&777777 -->
     
     
     <!--====== Social ======================= -->
@@ -253,29 +317,74 @@
         
         </div>
     </div>
+    
 
     
     <!-- ============== LOCATION ============ -->
     <div class="row expanded small-12">
-        <h2>Where to find us</h2>
+<!--        <h2>Where to find us</h2>-->
         <div class="google-map">
-            <iframe src="embed.html" width="1600" height="450" frameborder="0" style="border:0; max-width:100%;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoROBtZWNKRgRyEb4m0laH0M&key=AIzaSyCkJRa3oReXwfcrBgq-J2Z8XsifB7dvACA" width="1600" height="450" frameborder="0" style="border:0; max-width:100%;" allowfullscreen=""></iframe>
         </div>
     </div>
 
 
     <!--====== Footer ======================= -->
     <footer class="row common-padding expanded color-bgprimary-4 color-primary-1">
-        <p class="column small-6 text-left">Copyright @ 2017</p>
-        <p class="column small-6 text-right">Designed by <strong>XYZ.COMPANY</strong></p>
+        <h3 class="column small-6 text-center">XYZ Creation Inc. <br>Copyright @ 2017 </h3>
+<!--        <h3 class="column small-6 text-center">Copyright @ 2017</h3>-->
+        <p class="column small-6  small-centered text-center">Designed by <strong> ctDev</strong></p>
     </footer>
     
     
+    
+    
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+<!--    <script src="js/vendor/jquery.js"></script>-->
+<!--    <script src="js/vendor/what-input.js"></script>-->
+<!--    <script src="js/vendor/foundation.min.js"></script>-->
+<!--    <script src="js/app.js"></script>-->
+    
+        <!-- ========= COUROSEL  ==============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    
+<!--    <script src="./js/jquery.min.js.download"></script>-->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+            $(document).ready(function() {
+               $('.owl-carousel').owlCarousel(
+                {              
+                    items: 1,
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: false, 
+                    
+                    // fadeout is the only built in animation
+                    animateOut: 'fadeOut', 
+                });
+            })
+    </script>
+    
+    
+    <!-- ==== Animating fades on sections=========== -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <!--====== Activate the fadings JS =============-->
+    <script>
+        // AOS.init();
+        AOS.init({
+            
+            duration: 1200,
+            easing: 'linear',
+            delay: 100,
+        });
+    </script>
+    
+    
+    
 	<script type="text/javascript" src="js/jquery.funnyText.js"></script>
     <script type="text/javascript">
             $(document).ready(function() {
@@ -302,6 +411,9 @@
                 });
             });
         </script>
+    
+
+    
 
 </body>
 
