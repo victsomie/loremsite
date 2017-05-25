@@ -14,8 +14,8 @@
 body{
     background: #fff;
     font-family: 'Titillium Web','Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 110%;
+    font-weight: 300;
     padding-top: 80px;
 }
 
@@ -52,17 +52,25 @@ hr{
 /*===== MY MODIFIED CODE ============*/
 
 .myhero{
-    background-image: url(../heroguitarlady.jpg);
+/*    background-image: url(../heroguitarlady.jpg);*/
     background-attachment: fixed;
     background-size: 110% 110%;
+    background-position: right;
+    overflow: hidden;
     min-height: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .myhero .hero_text{
     padding: 1.5em;
 }
 
+
+
+
+.overlay{
+    background-color: rgba(255, 255, 255, 1); background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAQ0lEQVQYV2NkYGBgeP/i/WYQLSgh6AuiYYARXfLD8w9nBCQFTEDijCBdIB3YdIMlYcbgNBabbrCdyABmDdhOdElkPgAfuiQIquJDIgAAAABJRU5ErkJggg==) repeat;
+}
 
 /*========== HEXAGON SHAPES =======================*/
 
@@ -299,50 +307,55 @@ ul{
 
 /****************************NAV BAR************************************/
   
-.nav{
+.nav-mobile{
     background: #ffffff;
-    min-height: 50px;
+/*    min-height: 50px;*/
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10000;
 }
-.nav .left{
+.nav-mobile .left{
     float: left;
     margin-left: 0;
 }
-.nav .left li{
+.nav-mobile .left li{
 /*    font-size: 14px;*/
     float: left;
 }
+/*
 .nav .left li a{
     display: block;
-    padding: 9px 15px;
-    line-height: 30px;
+    padding: 2px 15px;
+    line-height: 10px;
     padding: 1.5em;
 }
 .nav .left li a:hover{
     background: #AA9A39;
     color: #FFF3AA;
 }
+*/
+.nav-mobile li a{
+    display: block;
+    padding: 2px 15px;
+    line-height: 10px;
+    padding: 1.2em;
+}
+.nav-mobile li a:hover{
+    background: #AA9A39;
+    color: #FFF3AA;
+}
 
-.nav .right{
+.nav-mobile .right{
     float: right;
     margin-right: 0;
 }
-.nav .right li{
+.nav-mobile .right li{
 /*    font-size: 14px;*/
     float: left;
 }
-.nav .right li a{
-    display: block;
-    padding: 9px 15px;
-    line-height: 30px;
-    padding: 1.5em;
-}
-.nav .right li a:hover{
-    background: #f2f2f2;
-}
+
+
 
 .toggle-nav{
     display: none;
@@ -353,6 +366,231 @@ ul{
 }
 
 /*********NAV BAR END**********/
+
+
+
+/* =============== SLIDER / ORBIT STYLES ==================*/
+/* Banner Style */
+#banner, .page-title {
+	background: #dedddb url("../img/banner-bg-7.jpg") repeat 0 0 ; 
+	border-bottom:8px solid #30DD75;
+	margin-bottom: 25px;	 
+}
+ 	
+#banner .orbit-container{
+	background: none ;
+}
+#banner .orbit-slide-number{
+	display: none;
+}
+.orbit-container .orbit-timer {
+	position: absolute;
+	top: 0; 
+	height: 3px;
+	width: 100%; 
+}
+.orbit-container .orbit-timer .orbit-progress { 
+	background-color: #919191;
+	background-color: rgba(167, 167, 167, 0.6);
+}
+
+.orbit-container .orbit-prev, .orbit-container .orbit-next { 
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 45px;
+	opacity: 0;	
+	opacity: 1;	/* MODIFIED */
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;	
+}
+.orbit-container .orbit-prev span{
+	margin-left: -4px;
+}
+.orbit-container .orbit-next span{
+	margin-left: -24px;
+    
+}
+.orbit-container .orbit-prev{
+	left:55px;
+	left:0; /* modified*/
+}
+.orbit-container .orbit-next{
+	right:55px;
+	right:0; /* modified */
+    margin-top: -74px; /* This pushes the element up abit*/
+}
+.orbit-bullets{
+	 display: block;
+	 position: relative;
+	 position: absolute; /* modified */
+}
+/*.orbit-container:hover  .orbit-prev{*/
+/*	left:0;*/
+/*	opacity: 1;*/
+/*}*/
+/*.orbit-container:hover  .orbit-next{*/
+/*	right:0;*/
+/*	opacity: 1;*/
+/*}*/
+.orbit-bullets{
+	text-align: center;
+        
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg); /* modified */
+    top: 10%; /* modified */
+    right: 0; /* modified */
+}
+.orbit-bullets li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #999;
+	float: none;
+	margin-right: 6px;
+	border: solid 1px #666;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+	-webkit-box-shadow: inset 1px 1px 2px #444;
+	-moz-box-shadow: inset 1px 1px 2px #444;
+	box-shadow: iinset 1px 1px 2px #444;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.slider-box{
+	padding: 40px 0 5px;	
+}
+.slider-details{
+	top:70px;
+}
+.slider-image{
+	text-align: center; 
+}
+.orbit-container .orbit-slides-container img{
+	display: inline-block;
+}
+ .slider-details p a.button{
+	margin-top: 15px;
+}
+.slider-details h2{color:#FFF; font-weight: bold; text-shadow: 1px 1px 1px #444;}
+.slider-details h4{color:#F9F8F8;text-shadow: 1px 1px 1px #444;} 
+.slider-details p{color:#F9F8F8;text-shadow: 1px 1px 1px #444;}
+
+
+
+
+/* Banner Animation */
+.orbit-container ul{
+		position: relative;
+		perspective: 1000px;
+		-o-perspective: 1000px;
+		-ms-perspective: 1000px;
+		-moz-perspective: 1000px;
+		-webkit-perspective: 1000px;
+		backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	overflow: hidden;
+}
+
+.orbit-container .slider-image {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay:  0.5s;
+	-o-animation-delay:  0.5s;
+	animation-delay:  0.5s;  	 
+	 
+}
+.slider-details  {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	-o-animation-duration: .3s;
+	animation-duration: .3s;
+	
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay:  1s;
+	-o-animation-delay:  1s;
+	animation-delay:  1s;  	 
+	 
+}
+.slider-details h2 {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	-o-animation-duration: .3s;
+	animation-duration: .3s;
+	
+	-webkit-animation-delay:  1s;
+	-moz-animation-delay:  1s;
+	-o-animation-delay:  1s;
+	animation-delay:  1s;  
+	 
+	 
+}
+
+.slider-details h4 {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	-o-animation-duration: .3s;
+	animation-duration: .3s;
+     -webkit-animation-delay: 1.2s;
+     -moz-animation-delay: 1.2s;
+     -o-animation-delay: 1.2s;
+     animation-delay: 1.2s;
+     
+}
+
+.slider-details p {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	-o-animation-duration: .3s;
+	animation-duration: .3s;
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      -o-animation-delay: 1.5s;
+      animation-delay: 1.5s; 
+}
+
+
+/* *********** END BANNER SLIDER **************** */
+
+/* ============= slider special================ */
+#victor-orbit{
+/*    background-image: url(/heroguitarlady.jpg);*/
+    background-attachment: fixed;
+    background-position: center
+}
+
+#victor-orbit .large-7{
+    margin-top: 5%;
+}
+
+/*
+.nav-fillslide .orbit-next{
+    opacity: 0;
+}
+.nav-fillslide:hover .orbit-next{
+    opacity: 1;
+}
+*/
+
+
+.orbit-container .orbit-previous, .orbit-container .orbit-next{
+    opacity: 0;
+}.orbit-container:hover .orbit-previous, .orbit-container:hover .orbit-next{
+    opacity: 1;
+}
+/* ========= end customizing my slider ==============*/
+
+
 
 
 
